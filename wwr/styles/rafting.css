@@ -1,0 +1,28 @@
+:root {
+    --heading-background-color: #110503;
+    --heading-text-color: #ff7700;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb( 0 0 0 / 0.1);
+}
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.montserrat-regular {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.footer {
+  text-decoration: none
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
