@@ -1,24 +1,38 @@
 :root {
     --heading-background-color: #110503;
     --heading-text-color: #ff7700;
-    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --heading-font: 'Anton', Helvetica, sans-serif;
     --padding: 1rem;
     --border: 1px solid rgb( 0 0 0 / 0.1);
-}
-.anton-regular {
-    font-family: "Anton", serif;
-    font-weight: 400;
-    font-style: normal;
   }
-
-.montserrat-regular {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+header {
+  background-color: #F4D9B8;
 }
-.footer {
-  text-decoration: none
+header img {
+  width: 150px;
+  position: relative;
+}
+header nav {
+  border: 1px solid #110503;
+  background: #ff7700;
+  position: relative;
+}
+main section img {
+  width: 150px;
+  border: #ff7700;
+  margin: 10px;
+  box-shadow: #110503;
+}
+footer {
+  text-decoration: none;
+  margin-top: 20px;
+  border-top: 20px solid #ff7700;
+  text-align: center;
+}
+footer img {
+  width: 60px;
+  text-align: center;
+  position: relative;
 }
 
 .hero img {
