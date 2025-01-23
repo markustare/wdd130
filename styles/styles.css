@@ -1,8 +1,9 @@
 /* CSS Variables */
 :root {
-    --heading-background-color: #f06;
-    --heading-text-color: #333;
-    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --heading-background-color: darkblue;
+    --heading-text-color: darkblue;
+    --heading-font: 'Merriweather', Helvetica, sans-serif;
+    --body-font: 'Montserrat', Arial, sans-serif;
     --padding: 1rem;
     --border: 1px solid rgb( 0 0 0 / 0.1);
 }
@@ -11,9 +12,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: var(--body-font);
+    font-size: smaller;
+    text-align: justify;
+}
 /* Navigation Styles */
 nav {
-    background-color: darkblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 nav a {
@@ -23,12 +29,13 @@ nav a {
 }
 /* Main Styles */
 h1 {
-    color: darkblue;
+    color: var(--heading-background-color);
+    font-family: var(--heading-font);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid darkblue;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
@@ -43,16 +50,20 @@ main {
 /* Aside Styles */
 aside {
     width: 20em;
+    padding: 10px;
     text-align: center;
     position: relative;
 }
 aside img {
     width: 250px;
+    padding: 10px;
     height: auto;
 }
 aside h2 {
     position: absolute;
-    top: 47px;
+    font-family: var(--heading-font);
+    color: var(--heading-text-color);
+    top: 30px;
     left: 5px;
 }
 /* Footer Styles */
@@ -65,7 +76,7 @@ footer {
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0 / .1);
+    border: var(--border)
     padding: 1rem;
     background-color: #ddd;
     color: #000;
