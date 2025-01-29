@@ -1,0 +1,75 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --accent1-color: darkblue;
+    --accent2-color: rgba(211, 211, 211, 0.614);
+    --heading-font: 'Merriweather', Helvetica, sans-serif;
+    --body-font: 'Montserrat', Arial, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    font-size: 1em;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+h1 {
+    margin: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    color: var(--primary-color);
+    background: var(--accent1-color);
+}
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 4px solid var(--secondary-color);
+    border-radius: 1rem;
+    background-color: var(--accent2-color);
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.5); 
+    display: grid;   
+}
+label, input, button, select, textarea {
+    font-family: var(--text-font);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+form img {
+    width: 300px;
+    height: auto;
+    padding: 1em;
+    margin: 0rem 9rem;
+}
+button {
+    margin: 1.5rem;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+    font-family: var(--text-font);
+    font-size: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    background-color: blue;
+}
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid var(--accent1-color);
+}
