@@ -422,6 +422,11 @@ button:hover {
   border-radius: 10px;
   font-family: var(--text-font);
 }
+.newsletter h4{
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: x-large;
+}
 .newsletter form {
   margin-top: 10px;
   max-width: 100%;
@@ -485,7 +490,7 @@ button:hover {
   width: 100%;
   border-radius: 10px;
 }
-.grid-item h4 {
+.grid-item h3 {
   margin: 10px 0;
   font-family: var(--heading-font);
   font-size: xx-large;
