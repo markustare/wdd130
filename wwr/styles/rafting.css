@@ -52,7 +52,7 @@ header nav ul li a:hover {
 }
 
 /* General Styles */
-body {
+body, html {
   font-family: var(--text-font);
   margin: 0;
   padding: 0;
@@ -88,6 +88,9 @@ main {
   height: auto;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .hero img {
@@ -95,6 +98,7 @@ main {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .hero h1 {
@@ -109,6 +113,18 @@ main {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  width: 100%;
 }
 
 /* Article Styles */
@@ -208,10 +224,11 @@ footer {
   background-color: var(--primary-color);
   color: var(--accent2-color);
   text-align: center;
-  margin: 20px 0;
+  margin: 1rem auto;
   padding: 1rem;
   border-top: 5px solid var(--accent2-color);
   border-bottom: 5px solid var(--accent2-color);
+  width: 1200px;
 }
 footer p {
   margin: 0;
@@ -392,4 +409,135 @@ button {
 }
 button:hover {
   background-color: #0056b3;
+}
+/* Newsletter Sign-Up */
+.newsletter {
+  width: 50%;
+  background: gainsboro;
+  padding: 20px;
+  text-align: center;
+  justify-self: center;
+  margin: 40px;
+  box-shadow: 0 6px 10px var(--secondary-color);
+  border-radius: 10px;
+  font-family: var(--text-font);
+}
+.newsletter form {
+  margin-top: 10px;
+  max-width: 100%;
+  width: 95%;
+  font-family: var(--text-font);
+  }
+.newsletter input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  font-family: var(--text-font);  
+}
+.newsletter button {
+  background: var(--accent2-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--text-font);  
+  align-self: center;
+  justify-self: center;
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  padding: 20px;
+  background: var(--secondary-color);
+  color: white;
+}
+.cta h3{
+  font-family: var(--heading-font);
+  font-size: xx-large;
+  font-weight: 500;
+}
+.cta-button, .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: var(--accent2-color);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Offerings */
+.offerings {
+  padding: 40px;
+  background: #f5a30058;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-item {
+  text-align: center;
+}
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.grid-item h4 {
+  margin: 10px 0;
+  font-family: var(--heading-font);
+  font-size: xx-large;
+  font-weight: 500;
+}
+/* Trips Section */
+.trip-subtitle {
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 2em;
+}
+.trips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.trips h2 {
+  grid-column: span 3;
+  margin: 0;
+}
+.trips p {
+  grid-column: span 3;
+  margin: 0;
+}
+.trip {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+  background-color: rgba(222, 145, 77, 0.42);
+}
+.trip img {
+  width: auto;
+  height: 150px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+/* Trip Table */
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.trip-table th, .trip-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.trip-table th {
+  background: #555;
+  color: white;
 }
